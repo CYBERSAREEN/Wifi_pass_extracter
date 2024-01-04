@@ -1,13 +1,18 @@
-# Windows Wi-Fi Profile Explorer
-A Python script leveraging the subprocess and optparse modules to interact with Windows Wi-Fi profiles. This utility provides essential functionalities:
+# Windows Wi-Fi Password Extractor
 <br>
-Show Profiles:
+This Python script is designed for Windows-based systems to facilitate the extraction of saved Wi-Fi passwords. The program employs the subprocess and optparse modules for seamless interaction through the command line.<br>
 <br>
-Utilize the -s or --show option to display a list of all saved Wi-Fi profiles. <br>
-Retrieve Wi-Fi Passwords:<br>
+Key Features:<br>
 <br>
-Specify a Wi-Fi network's name using the -n or --name option to extract and display its password.<br>
-Current Network Information:<br>
+Show Saved Profiles:<br>
 <br>
-Activate the -c or --current option to showcase details, including the password, of the currently connected Wi-Fi network.<br>
-Note: The script utilizes Windows-specific commands (netsh wlan) to extract information about Wi-Fi profiles. Ensure compatibility with your operating system.<br>
+Utilize the -s or --show option to display a list of all saved Wi-Fi profiles.<br>
+Retrieve Password for a Specific Network:<br>
+<br>
+Specify the Wi-Fi network's name with the -n or --name option to extract and display its password.<br>
+Export All Passwords:<br>
+
+Activate the -e or --export option to export all Wi-Fi profiles, creating a dedicated 'pass' folder in the current directory.<br>
+Retrieve Current Network Password:<br>
+<br>
+Use the -c or --current option to display details, including the password, for the currently connected Wi-Fi network.<br>
