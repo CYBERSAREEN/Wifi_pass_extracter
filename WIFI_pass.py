@@ -57,7 +57,7 @@ elif options.current:
 
     profile_name = ""
     for line in current_profile.split('\n'):
-        if 'Profile' in line:
+        if 'SSID' in line:
             profile_name = line.split(':')[1].strip()
             break
 
